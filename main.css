@@ -5,7 +5,7 @@ html, body {
     padding: 0;
 }
 
-#container {
+body {
     font-family: "Reddit Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 2;
