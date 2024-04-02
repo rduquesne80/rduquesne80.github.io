@@ -1,4 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap'),
+
 html, body {
     margin: 0;
     padding: 0;
+}
+
+#container {
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 2;
+    font-style: normal;
 }
