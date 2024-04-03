@@ -6,8 +6,7 @@ const tabBar = new mdc.tabBar.MDCTabBar(document.querySelector('.mdc-tab-bar'));
 let setActiveTab = (tabButton) => {
     tabButton.addClass('mdc-tab--active');
 };
-const buttonsTab = document.getElementsByClassName('.mdc-tab');
-console.log(buttonsTab);
+const buttonsTab = Array.from(document.getElementsByClassName('.mdc-tab'));
 buttonsTab.forEach(button => {
     button.addEventListener("click", (event) => {
         buttonsTab.forEach(but => but.removeClass('mdc-tab--active'));
