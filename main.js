@@ -1,3 +1,6 @@
+
+console.log(mdc);
+
 const topAppBarElement = document.querySelector('.mdc-top-app-bar');
 const topAppBar = mdc.MDCTopAppBar.attachTo(topAppBarElement);
 
