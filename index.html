@@ -11,14 +11,14 @@
     </head>
     <body>
         <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
-            <h5>Romain Duquesne [ RDUQUESNE80@OUTLOOK.COM ]</h5>
+            <h5>Romain Duquesne [ RDUQUESNE80]</h5>
         </header>
         <main class="mdc-top-app-bar--fixed-adjust">
             <div class="mdc-tab-bar" role="tablist">
                 <div class="mdc-tab-scroller">
                     <div class="mdc-tab-scroller__scroll-area">
                         <div class="mdc-tab-scroller__scroll-content">
-                            <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                            <button onclick="loadTab('portrait');" class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
                                 <span class="mdc-tab__content">
                                     <span class="mdc-tab__icon material-icons" aria-hidden="true">account_circle</span>
                                     <span class="mdc-tab__text-label">PORTRAIT</span>
@@ -28,7 +28,7 @@
                                 </span>
                                 <span class="mdc-tab__ripple"></span>     
                             </button>
-                            <button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                            <button onclick="loadTab('travels');" class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
                                 <span class="mdc-tab__content">
                                     <span class="mdc-tab__icon material-icons" aria-hidden="true">card_travel</span>
                                     <span class="mdc-tab__text-label">TRAVELS</span>
@@ -38,7 +38,7 @@
                                 </span>
                                 <span class="mdc-tab__ripple"></span>     
                             </button>
-                            <button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                            <button onclick="loadTab('skills');" class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
                                 <span class="mdc-tab__content">
                                     <span class="mdc-tab__icon material-icons" aria-hidden="true">workspace_premium</span>
                                     <span class="mdc-tab__text-label">SKILLS</span>
@@ -48,7 +48,7 @@
                                 </span>
                                 <span class="mdc-tab__ripple"></span>     
                             </button>
-                            <button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                            <button onclick="loadTab('contact');" class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
                                 <span class="mdc-tab__content">
                                     <span class="mdc-tab__icon material-icons" aria-hidden="true">contact_mail</span>
                                     <span class="mdc-tab__text-label">CONTACT</span>
@@ -61,6 +61,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="container">
+                
             </div>
         </main>
         <div>

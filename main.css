@@ -11,8 +11,18 @@ body {
     font-optical-sizing: auto;
     font-weight: 2;
     font-style: normal;
+    --mdc-theme-primary: #000000;
+    --mdc-theme-secondary: #00E676;
+    --mdc-theme-background: #EEEEEE;
+    --mdc-theme-on-primary: #EEEEEE;
+    --mdc-theme-on-secondary: #EEEEEE;
 }
 
 .mdc-top-app-bar {
     padding-left: 25px;
+}
+
+#container {
+    margin: 50px;
+    
 }
