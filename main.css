@@ -12,3 +12,7 @@ body {
     font-weight: 2;
     font-style: normal;
 }
+
+.mdc-top-app-bar {
+    padding: 5px;
+}
