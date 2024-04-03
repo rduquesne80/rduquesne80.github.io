@@ -1,7 +1,7 @@
 const topAppBarElement = document.querySelector('.mdc-top-app-bar');
-const topAppBar = new MDC.MDCTopAppBar(topAppBarElement);
+const topAppBar = new MDCTopAppBar(topAppBarElement);
 
-const tabBar = new MDC.MDCTabBar(document.querySelector('.mdc-tab-bar'));
+const tabBar = new MDCTabBar(document.querySelector('.mdc-tab-bar'));
 
 let setActiveTab = (tabButton) => {
     tabButton.addClass('mdc-tab--active');
