@@ -10,16 +10,6 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./app.js":
-/*!****************!*\
-  !*** ./app.js ***!
-  \****************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _material_top_app_bar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material/top-app-bar */ \"./node_modules/@material/top-app-bar/component.js\");\n/* harmony import */ var _material_tab_bar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material/tab-bar */ \"./node_modules/@material/tab-bar/component.js\");\n\n\nvar topAppBarElement = document.querySelector('.mdc-top-app-bar');\nvar topAppBar = new _material_top_app_bar__WEBPACK_IMPORTED_MODULE_0__.MDCTopAppBar(topAppBarElement);\nvar tabBar = new _material_tab_bar__WEBPACK_IMPORTED_MODULE_1__.MDCTabBar(document.querySelector('.mdc-tab-bar'));\nfetch('/tabs/portrait.html').then(function (response) {\n  return response.text();\n}).then(function (text) {\n  return document.getElementById('container').innerHTML = text;\n});\n\n/*\nlet loadTab = (tabName) => {\n  fetch('/tabs/' + tabName + '.html')\n      .then(response=> response.text())\n      .then(text=> document.getElementById('container').innerHTML = text);\n};\n*/\n\ndocument.querySelector('#loadPortraitButton').onclick = function () {\n  return fetch('/tabs/portrait.html').then(function (response) {\n    return response.text();\n  }).then(function (text) {\n    return document.getElementById('container').innerHTML = text;\n  });\n};\ndocument.querySelector('#loadTravelsButton').onclick = function () {\n  return fetch('/tabs/travels.html').then(function (response) {\n    return response.text();\n  }).then(function (text) {\n    return document.getElementById('container').innerHTML = text;\n  });\n};\ndocument.querySelector('#loadSkillsButton').onclick = function () {\n  return fetch('/tabs/skills.html').then(function (response) {\n    return response.text();\n  }).then(function (text) {\n    return document.getElementById('container').innerHTML = text;\n  });\n};\ndocument.querySelector('#loadContactButton').onclick = function () {\n  return fetch('/tabs/contact.html').then(function (response) {\n    return response.text();\n  }).then(function (text) {\n    return document.getElementById('container').innerHTML = text;\n  });\n};\n\n//# sourceURL=webpack://rduquesne80.github.io/./app.js?");
-
-/***/ }),
-
 /***/ "./node_modules/@material/base/component.js":
 /*!**************************************************!*\
   !*** ./node_modules/@material/base/component.js ***!
@@ -350,13 +340,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./app.scss":
-/*!******************!*\
-  !*** ./app.scss ***!
-  \******************/
+/***/ "./src/app.scss":
+/*!**********************!*\
+  !*** ./src/app.scss ***!
+  \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"bundle.css\");\n\n//# sourceURL=webpack://rduquesne80.github.io/./app.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"bundle.css\");\n\n//# sourceURL=webpack://rduquesne80.github.io/./src/app.scss?");
+
+/***/ }),
+
+/***/ "./src/app.ts":
+/*!********************!*\
+  !*** ./src/app.ts ***!
+  \********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _material_top_app_bar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material/top-app-bar */ \"./node_modules/@material/top-app-bar/component.js\");\n/* harmony import */ var _material_tab_bar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material/tab-bar */ \"./node_modules/@material/tab-bar/component.js\");\n\n\n\nconst topAppBar = new _material_top_app_bar__WEBPACK_IMPORTED_MODULE_0__.MDCTopAppBar(document.querySelector('.mdc-top-app-bar'));\nconst tabBar = new _material_tab_bar__WEBPACK_IMPORTED_MODULE_1__.MDCTabBar(document.querySelector('.mdc-tab-bar'));\n\nlet loadTabContent = (tabName) => fetch('/tabs/' + tabName + '.html')\n                            .then(response=> response.text())\n                            .then(text=> document.getElementById('container').innerHTML = text);\n\nArray.from(document.getElementsByClassName('navTabButton')).forEach(el => el.addEventListener(\"click\", (event) => loadTabContent(el.id)));\n\nloadTabContent('portrait');\n\n\n//# sourceURL=webpack://rduquesne80.github.io/./src/app.ts?");
 
 /***/ }),
 
@@ -465,8 +465,8 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	__webpack_require__("./app.scss");
-/******/ 	var __webpack_exports__ = __webpack_require__("./app.js");
+/******/ 	__webpack_require__("./src/app.scss");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/app.ts");
 /******/ 	
 /******/ })()
 ;
