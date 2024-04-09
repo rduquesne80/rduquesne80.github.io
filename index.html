@@ -4,10 +4,12 @@
         <meta charset="UTF-8">
         <title>RDUQUESNE80</title>
 
-        <link rel="icon" type="image/png" href="/favicon.png">
+        <link rel="icon" type="image/png" href="/images/favicon.png">
     
-        <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
-        <link href="/main.css" rel="stylesheet">
+         <link href="/lib/google-icons/google-icons.min.css" rel="stylesheet">
+        <link href="/lib/google-fonts/google-fonts.min.css" rel="stylesheet">
+
+        <link href="/dist/bundle.css" rel="stylesheet">
     </head>
     <body>
         <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
@@ -18,7 +20,7 @@
                 <div class="mdc-tab-scroller">
                     <div class="mdc-tab-scroller__scroll-area">
                         <div class="mdc-tab-scroller__scroll-content">
-                            <button onclick="loadTab('portrait');" class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                            <button id="loadPortraitButton" class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
                                 <span class="mdc-tab__content">
                                     <span class="mdc-tab__icon material-icons" aria-hidden="true">account_circle</span>
                                     <span class="mdc-tab__text-label">PORTRAIT</span>
@@ -28,7 +30,7 @@
                                 </span>
                                 <span class="mdc-tab__ripple"></span>     
                             </button>
-                            <button onclick="loadTab('travels');" class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                            <button id="loadTravelsButton" class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
                                 <span class="mdc-tab__content">
                                     <span class="mdc-tab__icon material-icons" aria-hidden="true">card_travel</span>
                                     <span class="mdc-tab__text-label">TRAVELS</span>
@@ -38,7 +40,7 @@
                                 </span>
                                 <span class="mdc-tab__ripple"></span>     
                             </button>
-                            <button onclick="loadTab('skills');" class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                            <button id="loadSkillsButton" class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
                                 <span class="mdc-tab__content">
                                     <span class="mdc-tab__icon material-icons" aria-hidden="true">workspace_premium</span>
                                     <span class="mdc-tab__text-label">SKILLS</span>
@@ -48,7 +50,7 @@
                                 </span>
                                 <span class="mdc-tab__ripple"></span>     
                             </button>
-                            <button onclick="loadTab('contact');" class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                            <button id="loadContactButton" class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
                                 <span class="mdc-tab__content">
                                     <span class="mdc-tab__icon material-icons" aria-hidden="true">contact_mail</span>
                                     <span class="mdc-tab__text-label">CONTACT</span>
@@ -67,8 +69,7 @@
             </div>
         </main>
         <div>
-            <script type="text/javascript" src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-            <script type="text/javascript" src="/main.js"></script>
+         <script type="text/javascript" src="/dist/bundle.js"></script>
             <noscript>ENABLING JAVASCRIPT IS REQUIRED.</noscript>
         </div>
     </body>

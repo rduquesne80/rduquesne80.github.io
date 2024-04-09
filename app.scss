@@ -1,5 +1,11 @@
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+@use "node_modules/@material/icon-button/mdc-icon-button";
+@use "node_modules/@material/top-app-bar/mdc-top-app-bar";
+@use "node_modules/@material/tab-bar/mdc-tab-bar";
+@use "node_modules/@material/tab-scroller/mdc-tab-scroller";
+@use "node_modules/@material/tab-indicator/mdc-tab-indicator";
+@use "node_modules/@material/tab/mdc-tab";
+
+//@include icon-button.core-styles;
 
 html, body {
     margin: 0;

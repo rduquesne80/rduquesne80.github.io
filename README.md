@@ -1,5 +1,8 @@
 # rduquesne80.github.io
-Simple presentation of my work and skills.
+Simple presentation of RDUQUESNE80.
 
-Open the following URL in your browser:
-https://rduquesne80.github.io
+```console
+rduquesne80@system:~$ npm i && npm run build && npm start
+```
+
+[Live version](https://rduquesne80.github.io)
